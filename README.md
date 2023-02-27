@@ -6,7 +6,7 @@ aldweb upgrade #1:
 - fix: as explained by distrubi (https://github.com/iotdevicesdev/ggreg20-v3-tasmota-esp32-driver/pull/1), "the calculated dose was waaaay too low", his fix - which also softcodes the conversion factor - was integrated
 - new: since CPM count is reset every 60 seconds, added a time counter, which is basically to just display the value stored in the ctr variable
  
-aldweb upgrade #2
+aldweb upgrade #2:
 - new: full rewrite of the driver, to clean and beautify code
 - new: include CPM 5 minutes average
  
