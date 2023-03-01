@@ -7,6 +7,7 @@
 aldweb upgrade #2
 - new: full rewrite of the driver, to clean and beautify code
 - new: include CPM 5 minutes average
+- new: include Power and CPM 1 minute averages
 
 aldweb upgrade #1
 - fix: if the native temperature sensor of the ESP32 is not shown (SetOption146 0), then the driver would fail to run, this is corrected
