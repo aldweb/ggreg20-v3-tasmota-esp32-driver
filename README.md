@@ -9,5 +9,6 @@ aldweb upgrade #1:
 aldweb upgrade #2:
 - new: full rewrite of the driver, to clean and beautify code
 - new: include CPM 5 minutes average
+- new: include Power and CPM 1 minute averages
  
 ![image](https://user-images.githubusercontent.com/61916846/222277107-2c19a4fb-076b-420a-b749-9a7e47b67322.png)
