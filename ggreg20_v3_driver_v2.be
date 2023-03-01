@@ -1,7 +1,7 @@
 #-
 -----------------------------------------------------
 | GGreg20_V3 Geiger Counter driver written in Berry |
-|   coded by aldweb (Feb 27th, 2023)                |
+|   coded by aldweb (Feb 28th, 2023)                |
 -----------------------------------------------------
 
 aldweb upgrade #2
@@ -16,22 +16,24 @@ aldweb upgrade #1
 
 tasmota.cmd('counter1 0')
 
-import string
 # Tubes can vary (+-20%) so recommendation is to use a conversion factor between 0.0054 and 0.0092 and to calibrate the calculations with a trusted (certified) device
 var GGpowerfactor = 0.0073 # 0.0073 = 0.0054 + (0.0092-0.0054)/2
 var GGtimer = 0
 var GGcounter = 0
 var GGcpt = 0
-var GGdose = 0
 var GGpower = 0
-var GGpwr5 = 0
+var GGdose = 0
+var GGcpm1 = 0
 var GGcpm5 = 0
+var GGpwr1 = 0
+var GGpwr5 = 0
 var GG5ptr = 1
-GGpwr5data = {}
 GGcpm5data = {}
+GGpwr5data = {}
 
 
 class GGREG20_V3 : Driver
+  #  print(tasmota.read_sensors())
   
   #- read and calculate accordingly -#
   def read_power()
@@ -45,13 +47,11 @@ class GGREG20_V3 : Driver
       i = i + 1
     end
     var counter = number(counterstr)
-    if GGtimer == 0
-      GGcounter = counter
-      GGtimer = 1
-    end
     if GGtimer >= 60
-      GGpwr5data[GG5ptr] = GGpower
+      GGcpm1 = GGcpt
       GGcpm5data[GG5ptr] = GGcpt
+      GGpwr1 = GGpower
+      GGpwr5data[GG5ptr] = GGpower
       var j = 1
       while j <= size(GGpwr5data)
         pwr5sum = pwr5sum + GGpwr5data[j]
@@ -86,17 +86,19 @@ class GGREG20_V3 : Driver
       "{s}GGreg20_V3 timer{m}%i seconds{e}"
       "{s}GGreg20_V3 cpt{m}%i CpT{e}"
       "{s}GGreg20_V3 powert{m}%1.3f uSv/h{e}"
+      "{s}GGreg20_V3 cpm1m{m}%i CpM{e}"
+      "{s}GGreg20_V3 power1m{m}%1.3f uSv/h{e}"
       "{s}GGreg20_V3 cpm5m{m}%i CpM{e}"
       "{s}GGreg20_V3 power5m{m}%1.3f uSv/h{e}"
       "{s}GGreg20_V3 dose{m}%1.4f uSv{e}",
-      GGtimer, GGcpt, GGpower, GGcpm5, GGpwr5, GGdose)
+      GGtimer, GGcpt, GGpower, GGcpm1, GGpwr1, GGcpm5, GGpwr5, GGdose)
     tasmota.web_send_decimal(msg)
   end
 
   #- add sensor value to teleperiod -#
   def json_append()
     import string
-    var msg = string.format(",\"GGreg20_V3\":{\"sec\":%i,\"cpt\":%i,\"powert\":%1.3f,\"cpm5m\":%i,\"power5m\":%1.3f,\"dose\":%1.4f}", GGtimer, GGcpt, GGpower, GGcpm5, GGpwr5, GGdose)
+    var msg = string.format(",\"GGreg20_V3\":{\"sec\":%i,\"cpt\":%i,\"powert\":%1.3f,\"cpm1m\":%i,\"power1m\":%1.3f,\"cpm5m\":%i,\"power5m\":%1.3f,\"dose\":%1.4f}", GGtimer, GGcpt, GGpower, GGcpm1, GGpwr1, GGcpm5, GGpwr5, GGdose)
     tasmota.response_append(msg)
   end
 
