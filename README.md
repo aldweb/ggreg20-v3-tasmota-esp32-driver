@@ -11,4 +11,8 @@ aldweb upgrade #2:
 - new: include CPM 5 minutes average
 - new: include Power and CPM 1 minute averages
  
-![image](https://user-images.githubusercontent.com/61916846/222277107-2c19a4fb-076b-420a-b749-9a7e47b67322.png)
+ aldweb upgrade #3
+- change: memory and code optimized
+- new: 5 minutes CPM precision set to 1 digit after the decimal point
+
+![image](https://user-images.githubusercontent.com/61916846/225440330-fe58d59c-9313-4054-a47f-b869558588c5.png)
