@@ -7,6 +7,7 @@
 aldweb upgrade #3
 - change: memory and code optimized
 - new: 5 minutes CPM precision set to 1 digit after the decimal point
+- cosmetic change: from "uSv" to "µSv"
 
 aldweb upgrade #2
 - new: full rewrite of the driver, to clean and beautify code
@@ -88,12 +89,12 @@ class GGREG20_V3 : Driver
     var msg = string.format(
       "{s}GGreg20_V3 timer{m}%i seconds{e}"
       "{s}GGreg20_V3 cpt{m}%i CpT{e}"
-      "{s}GGreg20_V3 powert{m}%1.3f uSv/h{e}"
+      "{s}GGreg20_V3 powert{m}%1.3f µSv/h{e}"
       "{s}GGreg20_V3 cpm1m{m}%i CpM{e}"
-      "{s}GGreg20_V3 power1m{m}%1.3f uSv/h{e}"
+      "{s}GGreg20_V3 power1m{m}%1.3f µSv/h{e}"
       "{s}GGreg20_V3 cpm5m{m}%1.1f CpM{e}"
-      "{s}GGreg20_V3 power5m{m}%1.3f uSv/h{e}"
-      "{s}GGreg20_V3 dose{m}%1.4f uSv{e}",
+      "{s}GGreg20_V3 power5m{m}%1.3f µSv/h{e}"
+      "{s}GGreg20_V3 dose{m}%1.4f µSv{e}",
       GGtimer, GGcpt, GGpower, GGcpm1, GGpwr1, GGcpm5, GGpwr5, GGdose)
     tasmota.web_send_decimal(msg)
   end
