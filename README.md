@@ -14,5 +14,6 @@ aldweb upgrade #2:
  aldweb upgrade #3
 - change: memory and code optimized
 - new: 5 minutes CPM precision set to 1 digit after the decimal point
+- cosmetic change: from "uSv" to "µSv"
 
 ![image](https://user-images.githubusercontent.com/61916846/225440330-fe58d59c-9313-4054-a47f-b869558588c5.png)
