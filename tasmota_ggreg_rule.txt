@@ -1,0 +1,15 @@
+Here below is simple code to integrate your Geiger counter data every 15 minutes with GMC.MAP (https://www.gmcmap.com/), using Tasmota rules.
+You need to create an account and a device by GMC.MAP, and then replace "X" by your account and device ID data in AID=XXXXX and GID=XXXXXXXXXXX.
+
+Rule1
+ON tele-GGreg20_V3#cpm5m DO VAR1 %value% ENDON
+ON tele-GGreg20_V3#power5m DO VAR2 %value% ENDON
+ON tele-GGreg20_V3#cpm1m DO VAR4 %value% ENDON
+ON tele-GGreg20_V3#power1m DO VAR5 %value% ENDON
+ON Time#Minute|15 DO WEBQUERY http://www.GMCmap.com/log2.asp?AID=XXXXX&GID=XXXXXXXXXXX&CPM=%VAR4%&ACPM=%VAR1%&uSV=%VAR5% GET ENDON
+
+
+To activate the rule:
+TELEPERIOD 60
+Rule1 4
+Rule1 1
