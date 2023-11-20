@@ -19,4 +19,4 @@ aldweb upgrade #2:
 aldweb upgrade #4
 - change: calibration factor upgraded to 0.00812
 
-![image](https://user-images.githubusercontent.com/61916846/225440330-fe58d59c-9313-4054-a47f-b869558588c5.png)
+![image](https://github.com/aldweb/ggreg20-v3-tasmota-esp32-driver/assets/61916846/6811029b-7256-4a31-b691-b141e6b211cb)
