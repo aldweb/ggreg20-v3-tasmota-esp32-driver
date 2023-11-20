@@ -1,8 +1,11 @@
 #-
 -----------------------------------------------------
 | GGreg20_V3 Geiger Counter driver written in Berry |
-|   coded by aldweb (March 15th, 2023)              |
+|   coded by aldweb (November 20th, 2023)           |
 -----------------------------------------------------
+
+aldweb upgrade #4
+- change: calibration factor upgraded to 0.00812
 
 aldweb upgrade #3
 - change: memory and code optimized
@@ -23,9 +26,11 @@ tasmota.cmd('counter1 0')
 
 #- Tubes can vary (+-20%) so recommendation is to use a conversion factor between 0.0054 and 0.0092 
    and to calibrate the calculations with a trusted (certified) device
-   if calibration not easily available, 0.0057 or 0.0065 are common values found on the www, the highest one selected here by precaution
+   if calibration not easily available, 0.0057 or 0.0065 are common values found on the www
+   there is also an explanation by the manufacturer of GGreg20_V3 Geiger Counter itself, suggesting to opt in for a value of 0.00812 (https://iot-devices.com.ua/en/technical-note-how-to-calculate-the-conversion-factor-for-geiger-tube-sbm20/)
 -#
-var GGpowerfactor = 0.0065
+
+var GGpowerfactor = 0.00812
 var GGtimer = 0
 var GGcounter = 0
 var GGcpt = 0
