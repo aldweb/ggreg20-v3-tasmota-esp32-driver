@@ -8,21 +8,6 @@
 
 Optimized Berry driver for the GGreg20_V3 Geiger Counter with Tasmota firmware on ESP32. This enhanced version provides improved performance, robustness, and seamless Home Assistant integration.
 
-## 📋 Table of Contents
-
-- [Features](#features)
-- [What's New](#whats-new)
-- [Hardware Requirements](#hardware-requirements)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Home Assistant Integration](#home-assistant-integration)
-- [Usage](#usage)
-- [API Reference](#api-reference)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [Credits](#credits)
-- [License](#license)
-
 ## ✨ Features
 
 - **Real-time radiation monitoring** with GGreg20_V3 Geiger Counter by IoT-devices, LLC
@@ -34,7 +19,7 @@ Optimized Berry driver for the GGreg20_V3 Geiger Counter with Tasmota firmware o
 
 ## 📖 API Reference
 
-- **Geiger Counter**: [GGreg20_V3](https://iot-devices.com.ua/en/product/ggreg20_v3-assembled-ionizing-radiation-detector-with-geiger-tube-sbm-20/) by IoT-devices, LLC
+- **Geiger Counter**: [GGreg20_V3](https://iot-devices.com.ua/en/product/ggreg20_v3-ionizing-radiation-detector-with-geiger-tube-sbm-20/) by IoT-devices, LLC
 - **Microcontroller**: ESP32 (any variant supported by Tasmota)
 - **Firmware**: Tasmota 12.0 or later with Berry support
 
