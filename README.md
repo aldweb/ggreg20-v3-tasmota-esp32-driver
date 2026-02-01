@@ -124,6 +124,7 @@ Setting both to 0 triggers automatic reinitialization to 25 CPM on restart.
 Navigate to your Tasmota device IP. The main page shows:
 
 <img src="images/tasmota32.png" align="left" style="margin-right: 20px; margin-bottom: 20px;">
+<br clear="all" />
 
 ### MQTT Telemetry
 
