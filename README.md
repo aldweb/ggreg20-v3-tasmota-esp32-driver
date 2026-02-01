@@ -43,7 +43,7 @@ Backlog CounterType 0; CounterDebounce 0; SaveData 0
 
 1. **Upload the driver file**
    - Navigate to **Consoles** → **Manage File system**
-   - Upload `ggreg20_v3_driver_v2.be` (keep the original filename)
+   - Upload `ggreg20_v3_driver_v2.be`
 
 2. **Create or edit autoexec.be**
    - In the file system, create (or edit) `autoexec.be`
