@@ -380,9 +380,7 @@ This Berry driver is provided as-is for community use. Feel free to modify and s
 - [Original Driver Repository](https://github.com/iotdevicesdev/ggreg20-v3-tasmota-esp32-driver)
 
 ### Radiation Safety
-- [EPA Radiation Information](https://www.epa.gov/radiation)
 - [Background Radiation Levels](https://en.wikipedia.org/wiki/Background_radiation)
-- [Radiation Units Explained](https://www.nrc.gov/reading-rm/basic-ref/glossary/radiation-dose.html)
 
 ---
 
