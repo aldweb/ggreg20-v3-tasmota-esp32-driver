@@ -23,12 +23,6 @@ Optimized Berry driver for the GGreg20_V3 Geiger Counter with Tasmota firmware o
 - **Microcontroller**: ESP32 (any variant supported by Tasmota)
 - **Firmware**: Tasmota 12.0 or later with Berry support
 
-### Wiring
-
-Connect GGreg20_V3 to ESP32:
-- **GGreg20_V3 OUT** → **ESP32 GPIO (configure as Counter1)**
-- **GND** → **GND**
-
 ## 📥 Installation
 
 ### Step 1: Flash Tasmota
