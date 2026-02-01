@@ -2,10 +2,6 @@
 
 > **Note:** This driver is a fork of the [original driver repository](https://github.com/iotdevicesdev/ggreg20-v3-tasmota-esp32-driver) from the GGreg20_V3 manufacturer (IoT-devices, LLC). The manufacturer recommends using this optimized version (see the [related GitHub issue](https://github.com/iotdevicesdev/ggreg20-v3-tasmota-esp32-driver/issues/3)).
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tasmota](https://img.shields.io/badge/Tasmota-12%2B-blue)](https://tasmota.github.io/)
-[![Berry](https://img.shields.io/badge/Berry-Language-green)](https://berry-lang.github.io/)
-
 Optimized Berry driver for the GGreg20_V3 Geiger Counter with Tasmota firmware on ESP32. This enhanced version provides improved performance, robustness, and seamless Home Assistant integration.
 
 ## ✨ Features
