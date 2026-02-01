@@ -123,18 +123,7 @@ Setting both to 0 triggers automatic reinitialization to 25 CPM on restart.
 
 Navigate to your Tasmota device IP. The main page shows:
 
-```
-GGreg20_V3 timer:    45 seconds
-GGreg20_V3 cpt:      12 CpT
-GGreg20_V3 powert:   0.097 µSv/h
-GGreg20_V3 cpm1m:    12 CpM
-GGreg20_V3 power1m:  0.097 µSv/h
-GGreg20_V3 cpm5m:    11.4 CpM
-GGreg20_V3 power5m:  0.093 µSv/h
-GGreg20_V3 dose:     0.0032 µSv
-GGreg20_V3 cpmin:    10.2 CpM
-GGreg20_V3 cpmax:    15.8 CpM
-```
+<img src="images/tasmota32.png" align="left" style="margin-right: 20px; margin-bottom: 20px;">
 
 ### MQTT Telemetry
 
