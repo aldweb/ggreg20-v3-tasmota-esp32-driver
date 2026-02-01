@@ -268,10 +268,7 @@ Backlog CounterType 0; CounterDebounce 0
 - Power and ground connected
 
 **Check driver loaded:**
-```
-br
-```
-Should show Berry console. Type:
+In Berry console, type:
 ```berry
 import string
 print(string.find(tasmota.read_sensors(), "GGreg20"))
@@ -281,7 +278,7 @@ Should return a number (not `nil`).
 ### CPM values seem incorrect
 
 **Check calibration factor:**
-- Default: 0.00812 (SBM-20)
+- Default: 0.00812
 - Verify tube type matches
 - Consider ±20% manufacturing tolerance
 
@@ -379,9 +376,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🔗 Resources
 
 ### Hardware
-- [GGreg20_V3 Product Page](https://www.tindie.com/products/iotdev/ggreg20_v3-ionizing-radiation-detector/)
-- [GGreg20_V3 Documentation](https://iot-devices.com.ua/en/product/ggreg20_v3-ionizing-radiation-detector-with-geiger-tube-sbm-20/)
-- [Conversion Factor Calculation](https://iot-devices.com.ua/en/technical-note-how-to-calculate-the-conversion-factor-for-geiger-tube-sbm20/)
+- [GGreg20_V3 Product Page](https://iot-devices.com.ua/en/product/ggreg20_v3-ionizing-radiation-detector-with-geiger-tube-sbm-20/)
+- [Conversion Factor Calculation](https://iot-devices.com.ua/en/geiger-tube-j305-conversion-factor-difference-for-radiation-source-power-and-absorbed-dose-technical-note-en/)
 
 ### Software
 - [Tasmota Firmware](https://tasmota.github.io/)
