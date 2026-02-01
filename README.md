@@ -2,7 +2,7 @@
 
 >**Note:** This driver is a fork of the [original driver repository](https://github.com/iotdevicesdev/ggreg20-v3-tasmota-esp32-driver) from the GGreg20_V3 manufacturer (IoT-devices, LLC). The manufacturer recommends using this optimized version (see the [related GitHub issue](https://github.com/iotdevicesdev/ggreg20-v3-tasmota-esp32-driver/issues/3)).
 
-<img src="images/ggreg20_v3.jpg" align="left" width="200" style="margin-right: 20px; margin-bottom: 20px;">Optimized Berry driver for the GGreg20_V3 Geiger Counter with Tasmota firmware on ESP32. This enhanced version provides improved performance, robustness, and seamless Home Assistant integration.
+<img src="images/ggreg20_v3.jpg" align="left" width="300" style="margin-right: 20px; margin-bottom: 20px;">Optimized Berry driver for the GGreg20_V3 Geiger Counter with Tasmota firmware on ESP32. This enhanced version provides improved performance, robustness, and seamless Home Assistant integration.
 <br clear="all" />
 
 ## ✨ Features
