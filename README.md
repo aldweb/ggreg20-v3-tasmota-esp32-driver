@@ -367,20 +367,16 @@ GGreg20 JSON error: ...
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This Berry driver is provided as-is for community use. Feel free to modify and share.
 
 ## 🔗 Resources
 
 ### Hardware
 - [GGreg20_V3 Product Page](https://iot-devices.com.ua/en/product/ggreg20_v3-ionizing-radiation-detector-with-geiger-tube-sbm-20/)
 - [Conversion Factor Calculation](https://iot-devices.com.ua/en/geiger-tube-j305-conversion-factor-difference-for-radiation-source-power-and-absorbed-dose-technical-note-en/)
-
+ 
 ### Software
 - [Tasmota Firmware](https://tasmota.github.io/)
-- [Berry Language Documentation](https://berry-lang.github.io/)
-- [Tasmota Berry Scripting](https://tasmota.github.io/docs/Berry/)
-
-### Community
 - [Original Driver Repository](https://github.com/iotdevicesdev/ggreg20-v3-tasmota-esp32-driver)
 
 ### Radiation Safety
