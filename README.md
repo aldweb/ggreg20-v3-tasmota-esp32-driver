@@ -57,12 +57,6 @@ Backlog CounterType 0; CounterDebounce 0; SaveData 0
    Restart 1
    ```
 
-**Advantages of this method:**
-- ✅ Clean separation of code
-- ✅ Easy updates (just replace `ggreg20_v3_driver_v2.be`)
-- ✅ `autoexec.be` remains minimal and readable
-- ✅ Can load multiple modules independently
-
 ### Step 4: Verify Installation
 
 In Tasmota console:
@@ -82,9 +76,6 @@ The driver works out-of-the-box with default settings. No configuration required
 
 The conversion factor depends on your Geiger tube type and the type of measurement needed.
 
-**For detailed calibration information and technical background**, please refer to the official guide:
-[Geiger tube J305 conversion factor: differences between the coefficient for source radiation power and absorbed dose](https://iot-devices.com.ua/en/geiger-tube-j305-conversion-factor-the-differences-between-the-coefficient-for-source-radiation-power-and-absorbed-dose/)
-
 **Default value:** 0.00812 (suitable for most SBM-20 and J305 tubes)
 
 **To adjust the calibration factor:**
@@ -97,7 +88,10 @@ The conversion factor depends on your Geiger tube type and the type of measureme
 - The conversion factor depends on radiation type and energy
 - For accurate measurements, calibrate against a certified reference source
 - Different tubes (SBM-20 vs J305) may require different factors
-- Consult the IoT-devices technical documentation for your specific tube model
+- Consult the IoT-devices technical documentation for your specific tube model (see below)
+
+**For detailed calibration information and technical background**, please refer to the official guide:
+[Geiger tube J305 conversion factor: differences between the coefficient for source radiation power and absorbed dose](https://iot-devices.com.ua/en/geiger-tube-j305-conversion-factor-difference-for-radiation-source-power-and-absorbed-dose-technical-note-en/)
 
 ### Telemetry Period
 
